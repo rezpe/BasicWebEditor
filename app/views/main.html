@@ -1,0 +1,27 @@
+<div class="row-fluid toolbar">
+    <span>Basic Editor: {{name}}</span>
+</div>
+<div class="row-fluid toolbar" >
+    <div class="btn-group col-md-8" role="group">
+        <a class="btn btn-default" href="#/">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="btn btn-default" ng-click="undo()">
+            Undo
+        </a>
+        <a class="btn btn-default" ng-click="redo()">
+            Redo
+        </a>
+        <a class="btn btn-default" href="#/object/preview/{{name}}">
+            Preview
+        </a>
+        <a type="button" class="btn btn-primary" ng-click="saveAsFile(object)">
+            <span class="glyphicon glyphicon-save"></span>
+        </a>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <textarea class="col-md-12" id="textinput" ng-model="values.text"> 
+    </textarea>
+</div>
