@@ -22,9 +22,7 @@ app.controller('MainCtrl', function($scope, localStorageService, $routeParams, H
     //Save 
     $scope.save = function() {
 
-        var Tosave = {}
-        Tosave.text = $scope.values.text;
-
+        var Tosave = $scope.values;
         localStorageService.set($scope.name, Tosave);
 
     }
