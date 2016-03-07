@@ -28,10 +28,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/object/preview/:objectId', {
-        templateUrl: 'views/preview.html',
-        controller: 'PreviewCtrl'
-      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
